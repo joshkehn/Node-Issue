@@ -1,0 +1,20 @@
+/Users/me/Projects/testing/node/emitter/example.js:11
+digger.addListener("data",
+       ^
+TypeError: Object function Obj() {
+    events.EventEmitter.call(this);
+    var self = this;
+
+    self.name = "Obj1";
+
+    self.testEmit = function(){
+        self.emit("data");
+    }
+    
+} has no method 'addListener'
+    at Object.<anonymous> (/Users/me/Projects/testing/node/emitter/example.js:11:8)
+    at Module._compile (node.js:472:23)
+    at Module._loadScriptSync (node.js:479:10)
+    at Module.loadSync (node.js:349:12)
+    at Object.runMain (node.js:532:24)
+    at node.js:762:10
